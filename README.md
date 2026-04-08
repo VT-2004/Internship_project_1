@@ -162,5 +162,3 @@ This project is licensed under the MIT License.
 If you encounter any issues or have questions, please open an issue on GitHub.
 
 ---
-
-**Made with ❤️ using React & TypeScript**
