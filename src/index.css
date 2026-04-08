@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 60% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 40% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 40% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 60% 6%;
+
+    --secondary: 270 60% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 30% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 200 80% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 210 100% 60%;
+
+    --radius: 1rem;
+
+    --glass-bg: 220 40% 20%;
+    --glass-border: 220 20% 30%;
+    --gradient-start: 210 100% 60%;
+    --gradient-mid: 260 80% 55%;
+    --gradient-end: 300 70% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply relative overflow-hidden rounded-2xl border border-glass-border;
+    background: hsla(var(--glass-bg) / 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, 0.05);
+  }
+
+  .glass-card-light {
+    @apply relative overflow-hidden rounded-2xl border border-glass-border;
+    background: hsla(var(--glass-bg) / 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.2);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  }
+
+  .animated-bg {
+    background: linear-gradient(-45deg, 
+      hsl(220, 60%, 8%), 
+      hsl(240, 50%, 12%), 
+      hsl(210, 60%, 10%), 
+      hsl(260, 40%, 10%));
+    background-size: 400% 400%;
+    animation: bg-shift 15s ease infinite;
+  }
+
+  .animated-bg-sunny {
+    background: linear-gradient(-45deg, 
+      hsl(30, 80%, 15%), 
+      hsl(40, 60%, 10%), 
+      hsl(20, 70%, 12%), 
+      hsl(35, 50%, 8%));
+    background-size: 400% 400%;
+    animation: bg-shift 15s ease infinite;
+  }
+
+  .animated-bg-rainy {
+    background: linear-gradient(-45deg, 
+      hsl(210, 50%, 8%), 
+      hsl(220, 60%, 10%), 
+      hsl(200, 40%, 7%), 
+      hsl(215, 55%, 9%));
+    background-size: 400% 400%;
+    animation: bg-shift 15s ease infinite;
+  }
+
+  .animated-bg-cloudy {
+    background: linear-gradient(-45deg, 
+      hsl(220, 30%, 12%), 
+      hsl(230, 25%, 14%), 
+      hsl(215, 35%, 10%), 
+      hsl(225, 28%, 11%));
+    background-size: 400% 400%;
+    animation: bg-shift 15s ease infinite;
+  }
+
+  .animated-bg-snowy {
+    background: linear-gradient(-45deg, 
+      hsl(210, 30%, 18%), 
+      hsl(220, 25%, 20%), 
+      hsl(200, 20%, 16%), 
+      hsl(215, 28%, 17%));
+    background-size: 400% 400%;
+    animation: bg-shift 15s ease infinite;
+  }
+
+  .glow-orb {
+    @apply absolute rounded-full opacity-20 blur-3xl;
+    animation: float 8s ease-in-out infinite;
+  }
+}
+
+@keyframes bg-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
