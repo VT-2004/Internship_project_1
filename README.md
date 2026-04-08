@@ -1,30 +1,3 @@
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/package.json#1-1), lines 1 to 50
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/package.json)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/README.md)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/App.tsx)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/pages/Index.tsx#1-1), lines 1 to 100
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/pages/Index.tsx#100-100), lines 100 to 146
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/lib/weather-api.ts)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/components/SearchBar.tsx#1-1), lines 1 to 50
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/components/SearchBar.tsx#50-50), lines 50 to 59
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/components/CurrentWeather.tsx)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/components/ForecastCards.tsx)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/src/components/RecentCities.tsx)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/index.html)
-
-Read [](file:///c%3A/Users/Admin/Downloads/aura-weather-main/aura-weather-main/vite.config.ts)
 
 # Aura Weather
 
